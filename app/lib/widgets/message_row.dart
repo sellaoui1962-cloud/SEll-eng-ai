@@ -648,8 +648,7 @@ class MessageRow extends StatelessWidget {
             //   等于没解释。这里先说清"发生了什么 + 系统会怎么做"，
             //   技术细节降级到下一行（灰色小字）供排查。
             b.tool == null
-                ? 'output_format_error'.tr()
-                    'output_retry'.tr()
+                ? 'output_format_error'.tr() + 'output_retry'.tr()
                 : b.reason,
             style: TextStyle(fontSize: 12, height: 1.5, color: h.textDim),
           ),

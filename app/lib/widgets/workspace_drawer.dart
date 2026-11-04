@@ -835,8 +835,7 @@ class _WorkspaceDrawerBody extends StatelessWidget {
                       color: h.text)),
               const SizedBox(height: HSpace.sm),
               Text(
-                'workspace_explainer'.tr()
-                'tap_plus_hint'.tr(),
+                'workspace_explainer'.tr() + 'tap_plus_hint'.tr(),
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     fontSize: 12.5, height: 1.65, color: h.textFaint),

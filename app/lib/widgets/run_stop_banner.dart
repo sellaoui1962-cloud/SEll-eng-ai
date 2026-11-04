@@ -44,8 +44,7 @@ String humanizeRunFailure(String raw) {
       lower.contains('maximum context') ||
       s.contains('run_context'.tr()) ||
       s.contains('run_context_exceeded'.tr())) {
-    return 'run_context_hint'.tr()
-        'run_context_fix'.tr();
+    return 'run_context_hint'.tr() + 'run_context_fix'.tr();
   }
   if (lower.contains('401') ||
       lower.contains('403') ||

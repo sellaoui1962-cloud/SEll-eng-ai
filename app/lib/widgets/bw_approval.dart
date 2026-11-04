@@ -466,7 +466,7 @@ Future<void> showApprovalModeSheet(
   required ValueChanged<PermissionMode> onPicked,
 }) async {
   final h = Hue.of(context);
-  const descriptions = {
+  final descriptions = {
     PermissionMode.manual: 'approval_mode_manual'.tr(),
     PermissionMode.workspaceAuto: 'approval_mode_workspace'.tr(),
     PermissionMode.fullAccess: 'approval_mode_full'.tr(),
@@ -1423,7 +1423,7 @@ Future<String?> showBwTextInputSheet(
   required String title,
   String initial = '',
   String placeholder = '',
-  String confirmLabel = 'save'.tr(),
+  String? confirmLabel,
   String? clearLabel,
 }) {
   final h = Hue.of(context);
@@ -1439,7 +1439,7 @@ Future<String?> showBwTextInputSheet(
       title: title,
       initial: initial,
       placeholder: placeholder,
-      confirmLabel: confirmLabel,
+      confirmLabel: confirmLabel ?? 'save'.tr(),
       clearLabel: clearLabel,
     )),
   );
