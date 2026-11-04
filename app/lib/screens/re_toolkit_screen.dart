@@ -177,7 +177,7 @@ class _ReToolkitScreenState extends State<ReToolkitScreen> {
               () => ReToolkit.fridaLoad(_package.text, _script.text)),
           const SizedBox(height: 24),
         ],
-      )),,
+      )),
     );
   }
 }

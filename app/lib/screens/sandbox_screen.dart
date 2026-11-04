@@ -180,7 +180,7 @@ class _SandboxScreenState extends State<SandboxScreen> {
             _resetCard(h),
           ],
         ],
-      )),,
+      )),
     );
   }
 

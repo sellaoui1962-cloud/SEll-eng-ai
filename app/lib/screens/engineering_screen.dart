@@ -161,7 +161,7 @@ class _EngineeringScreenState extends State<EngineeringScreen> {
             label: Text('re_toolkit_title'.tr()),
           ),
         ],
-      )),,
+      )),
     );
   }
 }
